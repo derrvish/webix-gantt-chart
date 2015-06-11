@@ -3,15 +3,21 @@
 <head>
 	<title>Webix Gantt Chart</title>
 	<!--Webix-->
-	<link rel="stylesheet" href="http://cdn.webix.com/edge/webix.css" type="text/css"> 
-	<script src="http://cdn.webix.com/edge/webix.js" type="text/javascript"></script>   
+	<link rel="stylesheet" href="//cdn.webix.com/edge/webix.css" type="text/css"> 
+	<script src="//cdn.webix.com/edge/webix.js" type="text/javascript"></script>   
+	<!--dhtmlxGantt-->
+	<script src="./gantt/gantt/dhtmlxgantt.js"></script>
+	<link href="./gantt/gantt/dhtmlxgantt.css" rel="stylesheet">
 	<!--dhtmlxGantt integration-->
 	<script type="text/javascript" src="./gantt/gantt.js"></script> 
 	<!--Export feature-->
-	<script src="http://export.dhtmlx.com/gantt/api.js"></script> 
+	<script src="//export.dhtmlx.com/gantt/api.js"></script> 
 </head>
 <body>
 <script type="text/javascript">
+
+//disable autoloading
+webix.require.disabled = true;
 
 var tasks = {
   data:[
